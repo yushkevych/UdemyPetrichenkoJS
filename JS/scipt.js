@@ -1,5 +1,25 @@
 "use strict";
 
+const numberOfFilms = +prompt('How many movies did you watch?', '');
+
+const personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+};
+
+const a = prompt('One of the last films?', ''),
+      b = prompt('How would you rate it', ''),
+      c = prompt('One of the last films?', ''),
+      d = prompt('How would you rate it', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
+
 
 /* 
 let number = 5;
@@ -36,9 +56,7 @@ answers[2] = prompt("What is your age?",'');
 document.write(answers);
  */
 
-const category = 'toys';
 
-console.log(`https://someurl.com/${category}/5`)
 
 
 
